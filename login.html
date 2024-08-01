@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <link rel="stylesheet" href="Css/login.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+     
+    }
+    section{
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70vh;
+    }
+    .container {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      text-align: center;
+      margin-top: 0;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+    .form-group input[type="submit"] {
+      background-color: #DB580F;
+      color: #fff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <div id ="rectangle">
+            <div id="topbar">
+                   <div id="icontext">
+                    <img src="image/om.jpg" alt="logo" id="logo">
+                    <h1 style="margin:10px;padding:15px;font-weight: 200;">Varanasi-The City Of Temple</h1>
+                    </div>
+                    <ul id="top">
+                    <li><a href="index.html" class="link1">Home</a></li>
+                    <li><a href="travel.html" class="link1">Travel&Tourist</a></li>
+                    <li><a href="foodstall.html" class="link1">FoodStall</a></li>
+                    <li><a href="maps.html" class="link1">Map</a></li>
+                    <li><a href="login.html" class="link1">Login</a></li>
+                    
+                  </ul>
+            </div>
+    
+        </div>
+        </header>
+  <section>
+  <div class="container">
+    <h2>Login</h2>
+    <form action="login.php" method="POST">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Login">
+      </div>
+    </form>
+    <p> Do You Have account ? <a href="signup.html">signup</p></a>
+  </div>
+</section>
+<footer>
+  <div id="bottambar">
+      <div id="top">
+          <li><a href="culture.html" class="link1">Cultural Heritage</a></li>
+          <li><a href="about.html" class="link1">About</a></li>
+          <li><a href="contact.html" class="link1">ContactUS</a></li>
+     </div>
+      <div id="copyright">
+          <center>
+                 Varanasi-The City Of Temple<br>
+                 Copywrite &copy; 2023-2024
+              </center>
+      </div>
+  </div>
+</footer>
+</body>
+</html>

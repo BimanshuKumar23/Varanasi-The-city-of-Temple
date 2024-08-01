@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="Css/contact.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      margin-top:30px;
+      padding: 20px;
+      position: relative;
+    }
+
+    .section {
+      text-align: center;
+      margin-bottom: 20px;
+      border: 2px solid black;
+      background-color: aliceblue;
+      float: left;
+    }
+
+    .contact-details {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #f9f9f9;
+      padding: 20px;
+      width: 100%;
+    }
+
+    .contact-form {
+      text-align: center;
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+
+    .contact-form input[type="submit"] {
+      background-color:#DB580F;
+      color: white;
+      cursor: pointer;
+    }
+
+    .contact-form input[type="submit"]:hover {
+      background-color: #DB580F;
+    }
+
+    @media screen and (min-width: 600px) {
+      .container {
+        padding: 40px;
+      }
+
+      .contact-details {
+        position: relative;
+        margin-bottom: 40px;
+      }
+
+      
+
+      .contact-form {
+        text-align: left;
+        margin-top: -50px;
+      }
+      #head{
+        color:#DB580F;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #cccccc;
+        border-radius: 4px;
+        resize: none;
+      }
+    }
+    #copyright{
+      font:white;
+    }
+  </style>
+</head>
+
+<body background="image/ganga.jpg">
+  <header>
+    <div id ="rectangle">
+        <div id="topbar">
+               <div id="icontext">
+                <img src="image/om.jpg" alt="logo" id="logo">
+                <h1 style="margin:10px;padding:15px;font-weight: 200;">Varanasi-The City Of Temple</h1>
+                </div>
+                <ul id="top">
+                <li><a href="index.html" class="link1">Home</a></li>
+                <li><a href="travel.html" class="link1">Tourist&Travel</a></li>
+                <li><a href="foodstall.html" class="link1">FoodStall</a></li>
+                <li><a href="travel.html" class="link1">Travel</a></li>
+                <li><a href="maps.html" class="link1">Map</a></li>
+                
+              </ul>
+        </div>
+  
+    </div>
+    </header>
+  <div class="container">
+    <div class="contact-form">
+      <h2 id="head"><center>CONTACT US</center></h2>
+      <form action="/submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="comment">Comment:</label><br>
+        <textarea id="comment" name="comment" rows="4" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+  </div>
+</div>
+<footer>
+  <div id="bottambar">
+      <div id="top">
+          <li><a href="culture.html" class="link1">Cultural Heritage</a></li>
+          <li><a href="about.html" class="link1">About</a></li>
+          <li><a href="contact.html" class="link1">ContactUS</a></li>
+     </div>
+      <div id="copyright">
+          <center>
+                 Varanasi-The City Of Temple<br>
+                 Copywrite &copy; 2023-2024
+              </center>
+      </div>
+  </div>
+</footer>
+</body>
+</html>
